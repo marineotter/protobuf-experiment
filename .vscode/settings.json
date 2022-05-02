@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pb_encode.h": "c",
+        "pb.h": "c"
+    }
+}

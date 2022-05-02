@@ -1,0 +1,13 @@
+*.exe
+pb.h
+pb_*.c
+pb_*.h
+
+*.pb.*
+*_pb*.py
+
+nanopb-*/
+nanopb-*.zip
+
+venv/
+*.pyc
