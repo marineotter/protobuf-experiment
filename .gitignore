@@ -2,6 +2,7 @@
 pb.h
 pb_*.c
 pb_*.h
+nanopb.proto
 
 *.pb.*
 *_pb*.py
