@@ -1,13 +1,13 @@
 main.exe: main.c sample.pb.c pb.h nanopb.proto
 	gcc *.c -o main.exe -lwsock32 -lws2_32 -I . 
 
-pb.h: nanopb-0.4.5-windows-x86
+pb.h: nanopb-0.4.5-windows-x86/nanopb-0.4.5-windows-x86/spm_headers/pb.h
 	copy /Y nanopb-0.4.5-windows-x86\nanopb-0.4.5-windows-x86\spm_headers\nanopb\*.h .\
 
-nanopb.proto: nanopb-0.4.5-windows-x86
-	copy /Y nanopb-0.4.5-windows-x86\nanopb-0.4.5-windows-x86\generator-bin\proto\nanopb.proto nanopb.proto
+nanopb.proto: nanopb-0.4.5-windows-x86/nanopb-0.4.5-windows-x86/generator/proto/nanopb.proto
+	copy /Y nanopb-0.4.5-windows-x86\nanopb-0.4.5-windows-x86\generator\proto\nanopb.proto nanopb.proto
 
-sample.pb.c: nanopb-0.4.5-windows-x86
+sample.pb.c: nanopb-0.4.5-windows-x86/nanopb-0.4.5-windows-x86/generator-bin/nanopb_generator.exe
 	nanopb-0.4.5-windows-x86\nanopb-0.4.5-windows-x86\generator-bin\nanopb_generator.exe sample.proto
 
 nanopb-0.4.5-windows-x86: nanopb-0.4.5-windows-x86.zip
